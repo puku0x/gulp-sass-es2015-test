@@ -22,7 +22,7 @@ gulp.task('reload', () => {
 });
 
 // デフォルト(監視とコンパイル)
-gulp.task('default', ['server'], () => {
+gulp.task('default', ['sass', 'js', 'server'], () => {
     gulp.watch(['src/js/**/*.js'], ['js', 'reload']);
     gulp.watch('src/sass/**/*.scss', ['sass', 'reload']);
     gulp.watch('*.html', ['reload']);
