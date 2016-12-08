@@ -1,0 +1,12 @@
+// 変数
+$theme-color: red;
+
+// クラス
+h1 {
+  color: $theme-color;
+  transition: 200ms ease-out transform;
+  &:hover {
+    color: blue;
+    transform: translate(10px,0);
+  }
+}
